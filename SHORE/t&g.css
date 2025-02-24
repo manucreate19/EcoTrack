@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a clean, modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f7fa, #e4ebf1); /* Soft gradient background */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00b894; /* Add a green accent for branding */
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00b894; /* Green accent on hover */
+}
+
+.container {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto auto auto;
+}
+
+/* Tips Section */
+.tips-section h2,
+.interactive-guides h2,
+.quizzes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+    border-bottom: 2px solid #00b894; /* Underline for emphasis */
+    display: inline-block;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.tip-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h3 {
+    color: #00b894;
+}
+
+.tip-card button {
+    background: #00b894;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.tip-card button:hover {
+    background: #019f75; /* Slightly darker green on hover */
+}
+
+/* Interactive Guides */
+.guides-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.guide-video, .guide-infographic {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.guide-video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.guide-infographic img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Quizzes */
+.quizzes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.quiz-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-card h3 {
+    color: #00b894;
+}
+
+.quiz-card button {
+    background: #00b894;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.quiz-card button:hover {
+    background: #019f75;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distributes the sections evenly */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    border-top: 1px solid #333; /* Optional: Adds a subtle border for separation */
+}
+
+.footer-section {
+    flex: 1; /* Ensures equal spacing for each section */
+    margin: 0 10px; /* Adds spacing between sections */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff; /* White text for headings */
+}
+
+.footer-section a {
+    display: block;
+    margin-bottom: 8px;
+    color: #aaa; /* Light gray for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    color: #fff; /* Changes link color to white on hover */
+    text-decoration: underline; /* Adds underline effect */
+}
+.footer-icons img {
+    width: 20px; /* Adjust size */
+    height: 20px;
+    margin: 0 10px; /* Maintain aspect ratio */
+  }
+  
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guides-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quizzes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+

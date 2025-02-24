@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #000;
+    color: #fff;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    color: #00b894;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.sidebar .signout {
+    margin-top: auto;
+    text-align: center;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .signout:hover {
+    background-color: #c9302c;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.header .btn {
+    padding: 10px 20px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #00b894;
+    margin-bottom: 15px;
+}
+
+/* Calendar */
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar .highlight {
+    background-color: #00b894;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Tasks */
+.tasks {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+/* General Transition Settings */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Search Button Outward Transition */
+#searchButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #444;
+    transform: scale(1.1); /* Expands outward */
+}
+
+/* Task Items Outward Transition */
+.tasks li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tasks li:hover {
+    background-color: #e0e0e0; /* Slightly darker background */
+    transform: scale(1.05); /* Expands outward */
+}
+
+/* Calendar Cell Outward Transition */
+.calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calendar td:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1); /* Expands outward */
+    cursor: pointer; /* Adds a pointer cursor for interactivity */
+}
+
+/* Add Task Button Outward Transition */
+/* General Button Styles */
+/* General Button Styles */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+    transform: scale(1.1); /* Expands outward */
+}
+
+/* Specific Style for Search Button Icon */
+
+/* Optional: Hover Effect for Search Button */
+.search-btn:hover {
+    background-color: #555;
+}
+
+
+
+/* Card Outward Transition */
+.card {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Expands outward */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Creates a dynamic shadow */
+}
+/* Progress Bar */
+.progress-bar {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #00b894;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Tip Card Styling */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #00b894;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card .btn {
+    background-color: #00b894;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #008c72;
+    transform: scale(1.1);
+}
+
+/* Hover Effect for Progress Bar */
+.progress:hover {
+    background-color: #008c72;
+    transition: background-color 0.3s ease;
+}

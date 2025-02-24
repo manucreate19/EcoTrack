@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #38a169;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #38a169;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+/* Filters Section */
+.filters {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.filters h2 {
+    margin-bottom: 1.5rem;
+    color: #38a169;
+}
+
+.filters label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.filters input,
+.filters select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.filters .primary-btn {
+    background-color: #38a169;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filters .primary-btn:hover {
+    background-color: #2f855a;
+}
+
+.filters .secondary-btn {
+    background-color: #fff;
+    color: #38a169;
+    border: 2px solid #38a169;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.filters .secondary-btn:hover {
+    background-color: #e6ffed;
+}
+
+/* Metrics Section */
+/* Metrics Section */
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex: 3;
+}
+
+/* Metric Cards Styling */
+/* Metrics Section */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 1.5rem;
+    flex: 3;
+}
+
+/* Metric Cards Styling */
+/* Metrics Section */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 1.5rem;
+    flex: 3;
+}
+
+/* Metric Cards Styling */
+.metric-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Styling inside Cards */
+.metric-img {
+    width: 80%; /* Adjust image width */
+    max-width: 200px; /* Ensure it doesn't grow too large */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Ensure cards are responsive */
+@media (max-width: 768px) {
+    .metrics {
+        grid-template-columns: 1fr; /* Stack cards in a single column for smaller screens */
+    }
+}
+

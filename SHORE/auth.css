@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('minimalistic\ yet\ attractive\ increasing\ UI\ for\ a\ sustainable\ plastic\ usage\ monitor\ and\ reduction\ tool.png'); /* Replace with the actual background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.setup-card {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.5); /* Adds translucency */
+    backdrop-filter: blur(60px); /* Creates a frosted glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+.setup-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.setup-card input, .setup-card select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-container button {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-back {
+    background-color: #ccc;
+    color: #333;
+}
+
+.continue {
+    background-color:black;
+    color: #fff;
+}
+
+.skip-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.skip-link:hover {
+    text-decoration: underline;
+}

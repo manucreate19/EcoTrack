@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Plastic Usage Tracker</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">EcoTrack</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="t&g.html">Tips & Guides</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <aside class="filters">
+                <h2>Filters</h2>
+                <label for="date-range">Date Range</label>
+                <input type="date" id="date-range">
+
+                <label for="plastic-type">Plastic Type</label>
+                <select id="plastic-type">
+                    <option>All Types</option>
+                    <option>Type 1</option>
+                    <option>Type 2</option>
+                </select>
+
+                <label for="region">Region</label>
+                <select id="region">
+                    <option>All Regions</option>
+                    <option>Region 1</option>
+                    <option>Region 2</option>
+                </select>
+
+                <button class="primary-btn" id="apply-filters">Apply Filters</button>
+                <button class="secondary-btn" id="export-reports">Export Reports</button>
+            </aside>
+
+            <section class="metrics">
+                
+                <div class="metric-card">
+                    <img src="WhatsApp Image 2025-01-04 at 15.11.36_5d5de660.jpg" alt="Monthly Usage" class="metric-img">
+                    <p>Monthly Usage</p>
+                </div>
+                <div class="metric-card">
+                    <img src="WhatsApp Image 2025-01-04 at 15.19.18_f396eb20.jpg" alt="Plastic Type Distribution" class="metric-img">
+                    <p>Plastic Type Distribution</p>
+                </div>
+                <div class="metric-card">
+                    <img src="WhatsApp Image 2025-01-04 at 15.13.58_203e3e0e.jpg" alt="Yearly Impact" class="metric-img">
+                    <p>Yearly Impact</p>
+                </div>
+                <div class="metric-card">
+                    <img src="WhatsApp Image 2025-01-04 at 15.09.58_cfc3ff7b.jpg" alt="Geographical Usage" class="metric-img">
+                    <p>Geographical Usage</p>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <script>
+        // JavaScript functionality
+        document.getElementById('apply-filters').addEventListener('click', () => {
+            alert('Filters applied! This is where filter logic will be implemented.');
+        });
+
+        document.getElementById('export-reports').addEventListener('click', () => {
+            alert('Reports exported! This is where export functionality will be implemented.');
+        });
+    </script>
+</body>
+</html>

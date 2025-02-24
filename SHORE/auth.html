@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Setup</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="setup-card">
+            <h1>Set up your profile</h1>
+            <form id="setup-form">
+                <input type="text" placeholder="Enter your full name" name="full-name" required>
+                <input type="text" placeholder="Choose a username" name="username" required>
+                <select name="location" required>
+                    <option value="">Select your location</option>
+                    <option value="usa">USA</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="button-container">
+                    <button type="button" class="go-back">Go Back</button>
+                    <button type="submit" class="continue">Continue</button>
+                </div>
+            </form>
+            <a href="home.html" class="skip-link">Skip for now</a>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
